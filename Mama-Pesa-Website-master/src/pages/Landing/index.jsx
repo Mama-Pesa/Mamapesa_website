@@ -526,7 +526,7 @@ function heroSection () {
                   className='max-w-full sm:text-[28px] md:text-[40px] text-[56px] text-white-A700 tracking-[-1.12px] text-center pt-4'
                   size='txtManropeExtraBold56'
                 >
-                  Empower Your Financial Independence
+                 Unlocking Financial Inclusion for Women in Africa through AI-Powered Decisioning and ChatBot solution
                 </Text>
                 <Text 
                   className='max-w-[750px] md:text-base text-white-A700 text-lg p-3 text-center'
