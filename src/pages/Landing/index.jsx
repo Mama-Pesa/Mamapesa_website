@@ -23,11 +23,12 @@ import stepImage4 from '../../../public/images/img_logos_black_900_48x48.svg';
 const totalSteps = 4;
 
 const contentStyle = {
-  height: '400px',
+  height: '100vh',
   color: '#fff',
   lineHeight: '160px',
   textAlign: 'center',
   background: '#364d79',
+  width: '100%',
 };
 
 const images = [
@@ -515,21 +516,21 @@ function heroSection () {
   };
     
   return (
-    <div id="hero-section" className='flex flex-col md:flex-row md:gap-10 sm:h-[45vh] items-center justify-between px-1 md:pl-10 md:px-10 px- sm:px-0 sm:py-0 py-2 sm:py-0 w-full relative'>
+    <div id="hero-section" className='flex flex-col md:flex-row md:gap-10 h-screen items-center justify-between md:pl-10 md:px-10 px- sm:px-0 sm:py-0 py-2 sm:py-0 w-full relative h-full'>
       
-        <div className="corousel-home w-full sm:w-full h-full md:w-full lg:w-3/4 xl:w-3/4">
-        <Carousel autoplay dotPosition="bottom" dots={true}>
+        <div className="corousel-home w-full sm:w-full h-full md:w-full">
+        <Carousel autoplay={true} infiniteLoop={true} interval={5000} showThumbs={false} showStatus={false} dotPosition="bottom" dots={true} style={{ height: '100vh' }}>
           {images.map((imageUrl, index) => (
-            <div key={index} style={{ ...contentStyle, display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundImage: `url(${imageUrl})` }}>
-              <div className='text-center'>
+            <div key={index} style={{ ...contentStyle, display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundImage: `url(${imageUrl})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+              <div className='text-center justify-center items-center flex flex-col'>
                 <Text
-                  className='max-w-full sm:text-[28px] md:text-[40px] text-[56px] text-white-A700 tracking-[-1.12px] text-center pt-4'
+                  className='max-w-[90%] sm:text-[28px] md:text-[40px] text-[50px] text-white-A700 tracking-[-1px] text-center pt-4 mx-auto'
                   size='txtManropeExtraBold56'
                 >
                  Unlocking Financial Inclusion for Women in Africa through AI-Powered Decisioning and ChatBot solution
                 </Text>
                 <Text 
-                  className='max-w-[750px] md:text-base text-white-A700 text-lg p-3 text-center'
+                  className='max-w-[750px] md:text-base text-white-A700 text-lg p-3 text-center mx-auto'
                   size='txtLatoRegular18' 
                 >
                   Secure funding for your income-generating ventures and achieve
@@ -539,7 +540,7 @@ function heroSection () {
                 </Text>
                 <div className='m-2 flex flex-row sm:flex-row gap-20 sm:items-center items-start sm:justify-center justify-center py-14'>
                   <Button
-                    className='bg-purple-100 !rounded-[20px] cursor-pointer sm:w-full md:flex-1 font-lato leading-[normal] text-base outline-purple_900 px-8 sm:px-0 hover:bg-purple-400 transition duration-300 ease-in-out'
+                    className='bg-purple-100 !rounded-[20px] cursor-pointer sm:w-full md:flex-1 font-lato leading-[normal] text-base outline-purple_900 px-8 py-4sm:px-0 hover:bg-purple-400 transition duration-300 ease-in-out'
                     shape='round'
                     color='purple_800'
                     size='xs'
