@@ -9,7 +9,7 @@ const Footer = props => {
     <>
       <footer className={props.className}>
         <div className='bg-white-A700 flex flex-col md:gap-10 gap-20 items-start md:items-start justify-start md:justify-start sm:p-[] sm:pb-[] sm:pl-[] sm:pr-[] sm:pt-[] md:px-10 px-16 py-20 w-full'>
-          <div className='flex sm:flex-col flex-row gap-8 items-center justify-start max-w-[1312px] w-full'>
+          <div className='flex sm:flex-col md:flex-row gap-8 items-center justify-start max-w-[1312px] w-full'>
             <div className='flex flex-1 flex-col sm:items-center items-start justify-start md:w-[] w-full'>
               <Img
                 className='h-[60px] w-[60px]'
@@ -64,14 +64,8 @@ const Footer = props => {
           </div>
           <div className='flex flex-col gap-8 items-center justify-start sm:justify-start w-full'>
             <Line className='bg-black-900 h-px w-full' />
-            <div className='flex md:flex-col flex-row gap-6 md:items-center items-start justify-start md:justify-start w-auto md:w-full'>
-              <Text
-                className='text-black-900 text-sm w-auto'
-                size='txtLatoRegular14'
-              >
-                {props?.copyright}
-              </Text>
-              <div className='flex flex-row gap-6 items-start justify-start w-auto'>
+            <div className='flex flex-col gap-6 md:items-center items-start justify-start md:justify-start w-auto md:w-full'>
+              <div className='flex flex-row gap-4 items-center justify-center w-auto'>
                 <a
                   href='javascript:'
                   className='text-black-900 text-sm underline w-auto'
@@ -91,6 +85,12 @@ const Footer = props => {
                   Cookies Settings
                 </Text>
               </div>
+              <Text
+                className='text-black-900 text-sm w-auto'
+                size='txtLatoRegular14'
+              >
+                {props?.copyright}
+              </Text>
             </div>
           </div>
         </div>
@@ -108,7 +108,7 @@ Footer.defaultProps = {
   socials2: 'images/img_camera.svg',
   socials3: 'images/img_airplane.svg',
   socials4: 'images/img_iconlinkedin.svg',
-  copyright: '© 2023 MamaPesa. All rights reserved.'
+  copyright: '© 2025 MamaPesa. All rights reserved.'
 }
 
 export default Footer

@@ -72,11 +72,11 @@ const LandingPage = () => {
         </div>
         <div className='bg-purple-300 flex flex-col md:flex-row font-roboto items-center justify-center sm:p-[] md:px-10 sm:px-5 sm:py-14 p-3 w-full' id='services'
 >
-          <div className='flex sm:flex-col flex-row md:gap-10 items-center justify-between max-w-[1312px] mx-auto md:pr-10 sm:pr-5 w-full'>
+          <div className='flex sm:flex-col md:flex-row md:gap-10 items-center justify-between max-w-[1312px] mx-auto md:pr-10 sm:pr-5 w-full'>
             <div className='flex flex-1 flex-col gap-6 sm:items-center items-start justify-start max-w-[644px] w-full'>
               <div className='flex flex-col gap-6 items-start justify-start w-full '>
                 <Text
-                  className='md:leading-[] max-w-[644px] md:max-w-full sm:text-2xl text-5xl md:text-[32px] text-black-900 tracking-[-0.96px] md:tracking-[1.5px]'
+                  className='md:leading-[] max-w-[644px] md:max-w-full sm:text-2xl text-5xl md:text-[32px] text-black-900 tracking-[-0.96px] md:tracking-[0.8px]'
                   size='txtManropeExtraBold48'
                 >
                   Unlock Financial Freedom with MamaPesa
@@ -108,17 +108,15 @@ const LandingPage = () => {
               </div>
             </div>
             <Img
-              className='md:flex-1 h-[594px] sm:h-auto object-cover sm:w-3/5 w-[354px] md:w-full '
+              className='md:flex-1 h-[594px] sm:h-auto object-cover sm:w-3/5 w-[354px] md:w-full md:hidden'
               src='images/img_mockrocketcapture.png'
               alt='mockrocketcaptu'
             />
           </div>
         </div>
-
-
-
+        
         {howItWorks()}
-        <div className='bg-white-A700 flex flex-col font-lato md:gap-10 gap-20 items-center justify-center md:px-10 px-16 sm:px-5 py-28 w-full'>
+        <div className='bg-white-A700 flex flex-col font-lato md:gap-10 gap-20 items-center justify-center md:px-10 px-16 sm:px-5 py-8 w-full'>
           <div className='flex flex-col items-center justify-start max-w-3xl w-full'>
             <div className='flex flex-col gap-6 items-center justify-start w-full'>
               <Text
@@ -208,9 +206,9 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-        <div className='bg-white-A700 flex sm:flex-col flex-row font-lato md:gap-10 gap-20 items-center justify-center md:px-10 px-16  py-28 w-full sm:py-8 sm:px-0'>
+        <div className='bg-white-A700 flex sm:flex-col md:flex-row font-lato md:gap-10 gap-20 items-center justify-center md:px-10 px-16  py-28 w-full sm:py-8 sm:px-0'>
           <Img
-            className='flex-1 h-[640px] sm:h-[Auto%] md:h-auto max-h-[640px] object-cover md:rounded-lg md:w-1/2 sm:w-[90%]'
+            className='flex-1 h-[640px] sm:h-[Auto%] md:h-auto max-h-[640px] object-cover rounded-lg md:w-1/2 sm:w-[90%]'
             src='images/img_placeholderimage_640x616.png'
             alt='placeholderimag_Two'
           />
@@ -246,8 +244,13 @@ const LandingPage = () => {
           </div>
           
         </div>
-        <Testimonial className='flex flex-col font-manrope gap-20 items-center justify-start md:px-10 px-16 sm:px-5 py-28 w-full' />
-        <div className='flex sm:flex-col flex-row font-lato md:gap-10 gap-20 items-center justify-start md:px-10 px-16 sm:px-4 py-28 w-full'>
+        <Testimonial className='flex flex-col font-manrope gap-20 items-center justify-start md:px-10 px-16 sm:px-5 w-full' />
+        <div className='flex sm:flex-col md:flex-row font-lato md:gap-10 gap-20 items-center justify-start md:px-10 px-16 sm:px-4 py-8 w-full'>
+          <Img
+            className='flex-1 h-[640px] md:h-auto max-h-[640px] sm:max-h-[] object-cover rounded-lg md:w-1/2 sm:w-full'
+            src='images/img_placeholderimage_2.png'
+            alt='placeholderimag_Three'
+          />
           <div className='flex flex-1 flex-col gap-6 items-start justify-start w-full'>
             <div className='flex flex-col items-start justify-start w-full'>
               <div className='flex flex-col gap-6 items-start justify-start w-full'>
@@ -268,7 +271,7 @@ const LandingPage = () => {
             </div>
             <div className='flex flex-col items-center justify-start pt-4 w-auto'>
               <Button
-                className='cursor-pointer hidden leading-[normal] min-w-[129px] text-base text-center'
+                className='cursor-pointer leading-[normal] min-w-[129px] text-base text-center'
                 shape='round'
                 color='black_900'
                 size='xs'
@@ -278,14 +281,9 @@ const LandingPage = () => {
               </Button>
             </div>
           </div>
-          <Img
-            className='flex-1 h-[640px] md:h-auto max-h-[640px] sm:max-h-[] object-cover md:rounded-lg md:w-1/2 sm:w-full'
-            src='images/img_placeholderimage_2.png'
-            alt='placeholderimag_Three'
-          />
         </div>
         <Testimonial
-          className='bg-white-A700 flex flex-col font-manrope gap-20 items-center justify-start md:px-10 px-16 sm:px-5 py-28 w-full'
+          className='bg-white-A700 flex flex-col font-manrope gap-5 items-center justify-start md:px-10 px-16 sm:px-5 w-full'
           
           txt={
             <>
@@ -300,9 +298,9 @@ const LandingPage = () => {
           name='Aisha K'
           title=' Student and Aspiring Investor'
         />
-        <div className='bg-white-A700 flex sm:flex-col flex-row font-lato md:gap-10 gap-20 items-center justify-start md:px-10 px-16 sm:px-4 py-28 sm:py-8 w-full'>
+        <div className='bg-white-A700 flex sm:flex-col md:flex-row font-lato md:gap-10 gap-10 items-center justify-start md:px-5 px-8 sm:px-4 py-4 sm:py-4 w-full'>
           <Img
-            className='flex-1 h-[640px] md:h-auto max-h-[640px] object-cover md:rounded-lg md:w-1/2 sm:w-full'
+            className='flex-1 h-[640px] md:h-auto max-h-[640px] object-cover rounded-lg md:w-1/2 sm:w-full'
             src='images/img_placeholderimage_3.png'
             alt='placeholderimag_Four'
           />
@@ -326,7 +324,7 @@ const LandingPage = () => {
             </div>
             <div className='flex flex-col items-center justify-start pt-4 w-auto'>
               <Button
-                className='cursor-pointer hidden leading-[normal] min-w-[128px] text-base text-center'
+                className='cursor-pointer leading-[normal] min-w-[128px] text-base text-center'
                 shape='round'
                 color='black_900'
                 size='xs'
@@ -401,7 +399,7 @@ const LandingPage = () => {
     ]
     return (
       <div
-        className='common-pointer bg-white-A700 flex md:flex-col flex-row font-manrope md:gap-10 gap-20 items-start md:items-center justify-center md:px-10 px-16 sm:px-5 py-28 sm:py-8 w-full'
+        className='common-pointer bg-white-A700 flex md:flex-col font-manrope md:gap-10 gap-20 items-start md:items-center justify-center md:px-10 px-16 sm:px-5 py-28 sm:py-8 w-full'
         id='contact-us'
         onClick={() => {
           handleSectionNavigation('contact-us')
@@ -434,7 +432,6 @@ const LandingPage = () => {
             Contact us
           </Button>
         </div>
-
         <div className='w-[50%] md:w-full'>
           {faqs.map((faq, index) => (
             <FAQ key={index} question={faq.question} answer={faq.answer} />
@@ -450,7 +447,7 @@ export default LandingPage
 function howItWorks () {
   return (
     <div>
-    <div className='bg-white-A700 flex sm:flex-col flex-row font-manrope md:gap-10 gap-20 items-start justify-start md:px-10 px-16 sm:px-5 py-28 w-full'>
+    <div className='bg-white-A700 flex sm:flex-col md:flex-row font-manrope md:gap-10 gap-20 items-start justify-start md:px-10 px-16 sm:px-5 py-28 w-full'>
     
       <div className='flex flex-1 flex-col gap-8 items-start justify-start w-full'>
         <div className='flex flex-col items-start justify-start w-full'>
@@ -476,10 +473,10 @@ function howItWorks () {
     </div>
     
     <div className='bg-purple-500 flex flex-col md:flex-row font-roboto items-center justify-center sm:p-8 md:px-10 px-10 sm:px-1 sm:py-5 py-20 w-full relative'>
-  <div className='flex sm:flex-col flex-row md:gap-10 items-center justify-between max-w-[1312px] mx-auto md:pr-10 sm:pr-5 w-full p-5'>
+  <div className='flex sm:flex-col md:flex-row md:gap-10 items-center justify-between max-w-[1312px] mx-auto md:pr-10 sm:pr-5 w-full p-5'>
     <div className='flex flex-1 flex-col gap-6 sm:items-center items-start justify-start max-w-[644px] w-full sm:p-5 p-20 my-0 shadow-lg rounded-lg bg-white'>
       <div className='flex flex-col gap-6 items-start justify-start w-full'>
-        <h1 className='text-5xl md:text-6xl text-black-900 sm:text-[49px] font-bold leading-tight'>
+        <h1 className='text-5xl md:text-3xl md:font-semibold text-black-900 font-bold leading-tight'>
           Empower your Food Production and Agriculture projects with MamaPesa
         </h1>
         <p className='text-lg text-black-900'>
